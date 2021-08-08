@@ -248,12 +248,14 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0, 2);
+  opacity: 1;
+  transition: opacity var(--time-duration) var(--timing-function);
 }
 
 .backrdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 
 .modal {
@@ -283,6 +285,7 @@ a {
   background-color: var(--clr-btn-link);
   transition: background-color var(--time-duration) var(--timing-function);
 }
+
 .btn-close:hover,
 .btn-close:focus {
   background-color: var(--clr-brend);
@@ -617,8 +620,6 @@ a {
   margin-bottom: 50px;
 }
 .btn-item {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
